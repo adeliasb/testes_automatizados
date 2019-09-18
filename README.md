@@ -1,4 +1,4 @@
-# testes_automatizados_web
-Automação de testes web em Ruby
+# testes_automatizados
+Automação de testes
 
-Esse repositório contém projetos de testes automatizados web utilizando BDD (Gherkin) na linguagem Ruby.
+Esse repositório contém projetos de testes automatizados web utilizando BDD (Gherkin) nas linguagens Ruby e Java (em andamento).
