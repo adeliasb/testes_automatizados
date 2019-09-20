@@ -9,15 +9,9 @@ require 'rspec/json_expectations'
 require 'rubygems'
 require 'time'
 
-require File.join(File.dirname(__FILE__), '/helpers/AddressBookCreateAddressPageHelper')
-require File.join(File.dirname(__FILE__), '/helpers/AddressBookSignUpPageHelper')
-require File.join(File.dirname(__FILE__), '/helpers/GenericPageHelper')
-require File.join(File.dirname(__FILE__), '/helpers/AddressBookSignInPageHelper')
+require File.join(File.dirname(__FILE__), '/helpers/SignUpPageHelper')
 
-include AddressBookCreateAddressPageHelper
-include AddressBookSignInPageHelper
-include AddressBookSignUpPageHelper
-include GenericPageHelper
+include SignUpPageHelper
 
 Capybara.register_driver :selenium do |app|
     browser_options = ::Selenium::WebDriver::Chrome::Options.new
@@ -31,7 +25,7 @@ Capybara.register_driver :selenium do |app|
     
   Capybara.configure do |config|
       config.default_driver = :selenium
-      config.app_host = 'http://a.testaddressbook.com'
+      config.app_host = 'https://www.netshoes.com.br/'
       config.ignore_hidden_elements = true
       Capybara.javascript_driver = :webkit
   end
