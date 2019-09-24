@@ -12,6 +12,5 @@ Feature: Sign up
   
     Scenario: To successfully sign up
        And I add all my personal information
-      #  When I try to sign up
-      #  Then I'm authenticated successfully
-      #  And I see "Olá, usuário" welcome message
+       When I try to sign up
+       Then I'm authenticated successfully with "Olá, usuário" welcome message

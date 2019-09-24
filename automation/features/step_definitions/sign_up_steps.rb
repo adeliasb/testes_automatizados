@@ -20,12 +20,8 @@ When("I try to sign up") do
     sign_up
 end
   
-Then("I'm authenticated successfully") do
-    expected_authentication
-end
-  
-Then("I see {string} welcome message") do |message|
-    expected_message = message
-    expected_welcome_message(expected_message)
+Then("I'm authenticated successfully with {string} welcome message") do |message|
+    welcome_message = message
+    expected_welcome_message(message)
 end
   

@@ -63,12 +63,9 @@ def sign_up
     find('#save-register-natural').click
 end
   
-def expected_authentication
-    
+def expected_welcome_message(message)
+    @message = (message).sub("usuário", "automation")
+    expect(find('#header-user-logged a[href="#header-user-logged"]').text). to eql(@message)
 end
-  
-def expected_welcome_message(expected_message)
-end
-
 
 end

@@ -19,7 +19,7 @@ include GenericPageHelper
 
 Capybara.register_driver :selenium do |app|
     browser_options = ::Selenium::WebDriver::Chrome::Options.new
-    # browser_options.args << '--headless'
+    browser_options.args << '--headless'
     browser_options.args << '--disable-gpu' if Gem.win_platform?
     browser_options.args << '--no-default-browser-check'
     browser_options.args << '--start-maximized'
