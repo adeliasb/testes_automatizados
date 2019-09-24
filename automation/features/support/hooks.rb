@@ -3,10 +3,10 @@ Before do
 end
 
 Before('@login') do
-    visit 'http://a.testaddressbook.com/sign_in'
-    fill_in 'session_email', :with => "automation_1568155575@test.com"
-    fill_in 'session_password', :with => "test123"
-    find('.btn').click
+    visit 'https://www.netshoes.com.br/login'
+    enter_email
+    enter_password
+    login
 end
 
 After do |scenario|

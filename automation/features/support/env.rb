@@ -11,15 +11,17 @@ require 'time'
 require 'faker'
 require 'cpf_faker'
 
-require File.join(File.dirname(__FILE__), '/helpers/SignUpPageHelper')
 require File.join(File.dirname(__FILE__), '/helpers/GenericPageHelper')
+require File.join(File.dirname(__FILE__), '/helpers/LoginPageHelper')
+require File.join(File.dirname(__FILE__), '/helpers/SignUpPageHelper')
 
-include SignUpPageHelper
 include GenericPageHelper
+include LoginPageHelper
+include SignUpPageHelper
 
 Capybara.register_driver :selenium do |app|
     browser_options = ::Selenium::WebDriver::Chrome::Options.new
-    browser_options.args << '--headless'
+    # browser_options.args << '--headless'
     browser_options.args << '--disable-gpu' if Gem.win_platform?
     browser_options.args << '--no-default-browser-check'
     browser_options.args << '--start-maximized'

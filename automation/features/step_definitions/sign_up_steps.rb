@@ -1,7 +1,7 @@
 #encoding: utf-8
 
 Given("I have all the required variables to execute the feature: Sign up") do
-    
+    welcome_message = nil # it stores the welcome message text
 end
   
 Given("I access Netshoes login page") do
