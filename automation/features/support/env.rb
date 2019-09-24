@@ -8,10 +8,14 @@ require 'rspec/expectations'
 require 'rspec/json_expectations'
 require 'rubygems'
 require 'time'
+require 'faker'
+require 'cpf_faker'
 
 require File.join(File.dirname(__FILE__), '/helpers/SignUpPageHelper')
+require File.join(File.dirname(__FILE__), '/helpers/GenericPageHelper')
 
 include SignUpPageHelper
+include GenericPageHelper
 
 Capybara.register_driver :selenium do |app|
     browser_options = ::Selenium::WebDriver::Chrome::Options.new

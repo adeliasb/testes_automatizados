@@ -13,7 +13,6 @@ Given("I'm redirected to sign up page after adding my email") do
 end
 
 Given("I add all my personal information") do
-    sleep 5
     add_personal_information
 end
   
