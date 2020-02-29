@@ -58,6 +58,8 @@ GEM
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.8.0)
+    faker (2.10.2)
+      i18n (>= 1.6, < 2)
     ffi (1.11.1)
     gherkin (3.2.0)
     http-cookie (1.0.3)
@@ -108,7 +110,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (12.1.0)
+    rake (12.3.3)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -156,12 +158,13 @@ DEPENDENCIES
   capybara-screenshot (= 1.0.17)
   cucumber (= 2.3.3)
   cucumber-rails (= 1.5.0)
+  faker
   httparty (= 0.15.6)
   httparty-cookies (= 0.1.1)
   launchy (= 2.4.3)
   parallel_tests (= 2.17.0)
   poltergeist (= 1.16.0)
-  rake (= 12.1.0)
+  rake (= 12.3.3)
   rspec (= 3.7.0)
   rspec-json_expectations
   rspec-rails
